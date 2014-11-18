@@ -1,5 +1,13 @@
 <?php
 
+//ver queries
+/*
+Event::listen('illuminate.query', function($sql){
+
+    echo $sql."<br>";
+});
+*/
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -20,3 +28,5 @@ Route::post('/', function()
 {
     return View::make('home');
 });
+
+Route::post('/api/getOrder','OrderController@create');
