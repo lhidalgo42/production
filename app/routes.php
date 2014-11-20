@@ -23,10 +23,5 @@ Route::get('/', function()
 {
 	return View::make('home');
 });
-
-Route::post('/', function()
-{
-    return View::make('home');
-});
-
-Route::post('/api/getOrder','OrderController@create');
+Route::post('/code','CodeController@create');
+Route::get('/order','OrderController@show');

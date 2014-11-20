@@ -2,101 +2,27 @@
 
 class OrderController extends \BaseController {
 
-	/**
-	 * Display a listing of the resource.
-	 *
-	 * @return Response
-	 */
-	public function index()
+	public function show()
 	{
-		//
-	}
+		$data = array("order" => array('id' => 'KD9164012014111','lote' => '12345','name' => 'CONJUNTO PISO TOLVA KOMATSU 930E-4 FASE 9 CAPACIDAD 164 m3 FORMATO ARMADA'),
+                      "products" => array(
+                          array('id' => 'KD9164012014111','name' => 'PLANCHAS PISO TOLVA KOMATSU 930E-4 FASE 9 CAPACIDAD 164 m3 FORMATO ARMADA','scaned' => 0),
+                          array('id' => 'KD9164012014111','name' => 'PLANCHAS PISO TOLVA KOMATSU 930E-4 FASE 9 CAPACIDAD 164 m3 FORMATO ARMADA','scaned' => 0),
+                          array('id' => 'KD9164012014111','name' => 'PLANCHAS PISO TOLVA KOMATSU 930E-4 FASE 9 CAPACIDAD 164 m3 FORMATO ARMADA','scaned' => 0),
+                          array('id' => 'KD9164012014111','name' => 'PLANCHAS PISO TOLVA KOMATSU 930E-4 FASE 9 CAPACIDAD 164 m3 FORMATO ARMADA','scaned' => 0),
+                          array('id' => 'KD9164012014111','name' => 'PLANCHAS PISO TOLVA KOMATSU 930E-4 FASE 9 CAPACIDAD 164 m3 FORMATO ARMADA','scaned' => 0),
+                          array('id' => 'KD9164012014111','name' => 'PLANCHAS PISO TOLVA KOMATSU 930E-4 FASE 9 CAPACIDAD 164 m3 FORMATO ARMADA','scaned' => 0),
+                          array('id' => 'KD9164012014111','name' => 'PLANCHAS PISO TOLVA KOMATSU 930E-4 FASE 9 CAPACIDAD 164 m3 FORMATO ARMADA','scaned' => 0),
+                          array('id' => 'KD9164012014111','name' => 'PLANCHAS PISO TOLVA KOMATSU 930E-4 FASE 9 CAPACIDAD 164 m3 FORMATO ARMADA','scaned' => 0),
+                          array('id' => 'KD9164012014111','name' => 'PLANCHAS PISO TOLVA KOMATSU 930E-4 FASE 9 CAPACIDAD 164 m3 FORMATO ARMADA','scaned' => 0),
+                          array('id' => 'KD9164012014111','name' => 'PLANCHAS PISO TOLVA KOMATSU 930E-4 FASE 9 CAPACIDAD 164 m3 FORMATO ARMADA','scaned' => 0),
+                          array('id' => 'KD9164012014111','name' => 'ARMADURA PISO TOLVA KOMATSU 930E-4 FASE 9 ANCHO 8400 mm FORMATO ARMADA','scaned' => 1)),
+                      "results" => array(
+                          array('id' => 'KD9164012014111','name' => 'CONJUNTO PISO TOLVA KOMATSU 930E-4 FASE 9 CAPACIDAD 164 m3 FORMATO ARMADA','scaned' => 0)),
+                      "invalids" => array(
+                          array('id' => 'KD9164042014111','name' => 'SECCION CANOPY A (TRAS.) TOLVA KOMATSU 930E-4 FASE 9 ANCHO 8400 mm FORMATO ARMADA','scaned' => 0)));
 
-
-	/**
-	 * Show the form for creating a new resource.
-	 *
-	 * @return Response
-	 */
-	public function create()
-	{
-        $code = Input::get('code');
-
-		$data = array("order" => array('id' => '7640152110092','name' => 'orden para pilar con base'),
-                      "products" => array("base1","pilar1","cosa 1"),
-                      "result" => array("pilar con base1"));
-        if($code == $data['order']['id'])
-        {
-            return $data;
-        }
-        else{
-            $data = array("order" => array('id' => '7640152110092','name' => 'Orden No Valida'),
-                "products" => array("No Valido"),
-                "result" => array("No valido"));
-            return $data;
-        }
-
+        return $data;
 
 	}
-
-
-	/**
-	 * Store a newly created resource in storage.
-	 *
-	 * @return Response
-	 */
-	public function store()
-	{
-		//
-	}
-
-
-	/**
-	 * Display the specified resource.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function show($id)
-	{
-		//
-	}
-
-
-	/**
-	 * Show the form for editing the specified resource.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function edit($id)
-	{
-		//
-	}
-
-
-	/**
-	 * Update the specified resource in storage.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function update($id)
-	{
-		//
-	}
-
-
-	/**
-	 * Remove the specified resource from storage.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function destroy($id)
-	{
-		//
-	}
-
-
 }
