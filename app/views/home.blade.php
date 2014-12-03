@@ -29,15 +29,6 @@
                            </li>
                         </ul>
                     </div>
-                    <div class="col-xs-12">
-                        <h2 class="text-center" style="margin-top: -15px;">Producto Erroneo</h2>
-                        <hr>
-                        <ul class="list-group" >
-                           <li class="list-group-item list-group-item-danger" ng-repeat="invalid in orders.invalids">
-                              <strong>@{{ invalid.name }}</strong><i class=" pull-right fa fa-close "></i><br> <ins>@{{ invalid.id }}.</ins>
-                           </li>
-                        </ul>
-                    </div>
                 </div>
             </div>
          </div>
